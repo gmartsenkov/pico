@@ -1,3 +1,4 @@
+#include "stdio.h"
 #include "pico/stdlib.h"
 
 int main() 
@@ -9,6 +10,7 @@ int main()
 
     while (true) 
     {
+        printf("Blink!\r\n");
         gpio_put(led_pin, true);
         sleep_ms(1000);
         gpio_put(led_pin, false);
